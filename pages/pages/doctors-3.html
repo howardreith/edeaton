@@ -34,7 +34,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Appointment - Medical | Canvas</title>
+	<title>Doctors - Medical | Canvas</title>
 
 </head>
 
@@ -77,7 +77,7 @@
 									<li><a href="#"><img src="../../images/icons/flags/german.png" alt="German"> DE</a></li>
 								</ul>
 							</li>
-							<li><a href="#" data-scrollto="#booking-appointment-form" data-offset="160" data-easing="easeInOutExpo" data-speed="1200" class="bgcolor" style="color:#FFF;">Book an Appointment</a></li>
+							<li><a href="../../index.html#booking-appointment-form" data-offset="100" data-easing="easeInOutExpo" data-speed="1200" class="bgcolor" style="color:#FFF;">Book an Appointment</a></li>
 						</ul>
 					</div><!-- .top-links end -->
 
@@ -100,8 +100,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="../../demo-medical.html" class="standard-logo"><img src="images/logo-medical.png" alt="Canvas Logo"></a>
-						<a href="../../demo-medical.html" class="retina-logo"><img src="images/logo-medical@2x.png" alt="Canvas Logo"></a>
+						<a href="../../index.html" class="standard-logo"><img src="images/logo-medical.png" alt="Canvas Logo"></a>
+						<a href="../../index.html" class="retina-logo"><img src="images/logo-medical@2x.png" alt="Canvas Logo"></a>
 					</div><!-- #logo end -->
 
 					<!-- Primary Navigation
@@ -109,14 +109,14 @@
 					<nav id="primary-menu" class="style-3 with-arrows">
 
 						<ul>
-							<li><a href="../../demo-medical.html"><div>Home</div></a></li>
+							<li><a href="../../index.html"><div>Home</div></a></li>
 							<li><a href="about-us.html"><div>About Us</div></a></li>
 							<li><a href="departments.html"><div>Departments</div></a></li>
-							<li class="current"><a href="appointment.html"><div>Appointment</div></a></li>
-							<li><a href="doctors.html"><div>Doctors</div></a>
+							<li><a href="appointment.html"><div>Appointment</div></a></li>
+							<li class="current"><a href="doctors.html"><div>Doctors</div></a>
 								<ul>
 									<li><a href="doctors-lists.html"><div>2 columns - List style</div></a></li>
-									<li><a href="doctors-3.html"><div>3 columns</div></a></li>
+									<li class="current"><a href="doctors-3.html"><div>3 columns</div></a></li>
 									<li><a href="doctors.html"><div>4 columns</div></a></li>
 								</ul>
 							</li>
@@ -134,14 +134,14 @@
 
 		<!-- Page Title
 		============================================= -->
-		<section id="page-title" class="page-title-parallax" style="background-image: url('images/appointment/page-title-bg.jpg'); background-position: bottom center; background-size: cover; padding: 80px 0;">
+		<section id="page-title" class="nobg">
 
 			<div class="container clearfix">
-				<h1>Appointment</h1>
+				<h1>Doctors</h1>
 				<span>A Short Page Title Tagline</span>
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="#">Home</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Appointment</li>
+					<li class="breadcrumb-item active" aria-current="page">Doctors</li>
 				</ol>
 			</div>
 
@@ -155,120 +155,111 @@
 
 				<div class="container clearfix">
 
-					<div class="heading-block center nobottomborder nobottommargin">
-						<h3>Book an Appointment.</h3>
-						<span>Dynamically formulate error-free results before integrated results. Dramatically incubate integrated resources without cost effective "outside the.</span>
+					<div class="col_one_third">
+
+						<div class="team">
+							<div class="team-image">
+								<img src="images/doctors/1.jpg" alt="Dr. John Doe">
+							</div>
+							<div class="team-desc">
+								<div class="team-title"><h4>Dr. John Doe</h4><span>Cardiologist</span></div>
+							</div>
+						</div>
+
 					</div>
 
-				</div>
-
-				<div class="section nobottommargin parallax" style="background: url('images/appointment/bg.jpg') top center no-repeat / cover;" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px 200px;">
-					<div class="container clearfix">
-						<div class="row clearfix">
-							<div class="col-lg-5">
-								<div class="d-none d-lg-block" style="position: relative;" data-height-xl="413" >
-									<img src="images/appointment/doctor1.png" alt="" style="position: absolute; bottom: -65px;">
-								</div>
+					<div class="col_one_third">
+						<div class="team">
+							<div class="team-image">
+								<img src="images/doctors/2.jpg" alt="Dr. John Doe">
 							</div>
-
-							<div id="booking-appointment-form" class="col-lg-7">
-								<div id="medical-form-result" data-notify-type="success" data-notify-msg="<i class=icon-ok-sign></i> Message Sent Successfully!"></div>
-								<form class="nobottommargin" id="template-medical-form" name="template-medical-form" action="include/appointment.php" method="post">
-									<div class="col_two_third">
-										<label for="template-medical-name">Name:</label>
-										<input type="text" id="template-medical-name" name="template-medical-name" class="form-control not-dark required" value="">
-									</div>
-									<div class="col_one_third col_last">
-										<label for="template-medical-phone">Phone:</label>
-										<input type="text" id="template-medical-phone" name="template-medical-phone" class="form-control not-dark required" value="">
-									</div>
-									<div class="clear"></div>
-									<div class="col_two_third">
-										<label for="template-medical-email">Email Address:</label>
-										<input type="email" id="template-medical-email" name="template-medical-email" class="form-control not-dark required" value="">
-									</div>
-									<div class="col_one_third col_last">
-										<label for="template-medical-dob">Date of Birth:</label>
-										<input type="text" id="template-medical-dob" name="template-medical-dob" class="form-control not-dark required" value="" placeholder="DD/MM/YYYY">
-									</div>
-									<div class="clear"></div>
-									<div class="col_two_fifth nobottommargin">
-										<div class="col_full">
-											<label for="template-medical-appoint-date">Appointment Date:</label>
-											<input type="text" id="template-medical-appoint-date" name="template-medical-appoint-date" class="form-control not-dark required" value="" placeholder="DD/MM/YYYY">
-										</div>
-										<div class="col_full nobottommargin">
-											<label for="template-medical-second-booking">Booked with us Before?</label><br>
-											<label class="rightmargin-sm">
-												<input type="radio" id="template-medical-second-booking" name="template-medical-second-booking" value="yes">
-												Yes
-											</label>
-											<label>
-												<input type="radio" name="template-medical-second-booking" value="no" checked>
-												No
-											</label>
-										</div>
-									</div>
-									<div class="col_three_fifth nobottommargin col_last">
-										<label for="template-medical-message">Message:</label>
-										<textarea id="template-medical-message" name="template-medical-message" class="form-control not-dark required" cols="30" rows="5"></textarea>
-									</div>
-									<div class="clear"></div>
-									<div class="col_full hidden">
-										<input type="text" name="template-medical-botcheck" value="" />
-									</div>
-									<div class="col_full topmargin-sm nobottommargin">
-										<button class="button button-rounded nomargin fright" type="submit" value="submit">Confirm Booking</button>
-									</div>
-									<div class="clear"></div>
-								</form>
-
+							<div class="team-desc">
+								<div class="team-title"><h4>Dr. Bryan Mcguire</h4><span>Orthopedist</span></div>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="section nomargin">
-					<div class="container clearfix">
-						<div class="heading-block center nobottomborder bottommargin-lg">
-							<h3>Questions Before Booking</h3>
-							<span>Dynamically formulate error-free results before integrated results. Dramatically incubate integrated resources without cost effective "outside the.</span>
-						</div>
-						<div id="faqs" class="faqs row">
-							<div class="col-lg-6">
-
-								<h4><strong class="color">Q.</strong> How do I become an author?</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</p>
-
-								<div class="line line-sm"></div>
-
-								<h4><strong class="color">Q.</strong> Helpful Resources for Authors</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, placeat, architecto rem dolorem dignissimos repellat veritatis in et eos doloribus magnam aliquam ipsa alias assumenda officiis quasi sapiente suscipit veniam odio voluptatum. Enim at asperiores quod velit minima officia accusamus cumque eligendi consequuntur fuga? Maiores, quasi, voluptates, exercitationem fuga voluptatibus a repudiandae expedita omnis molestiae alias repellat perferendis dolores dolor.</p>
-
-								<div class="line line-sm"></div>
-
-								<h4><strong class="color">Q.</strong> How much money can I make?</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, fugiat iste nisi tempore nesciunt nemo fuga? Nesciunt, delectus laboriosam nisi repudiandae nam fuga saepe animi recusandae. Asperiores, provident, esse, doloremque, adipisci eaque alias dolore molestias assumenda quasi saepe nisi ab illo ex nesciunt nobis laboriosam iusto quia nulla ad voluptatibus iste beatae voluptas corrupti facilis accusamus recusandae sequi debitis reprehenderit quibusdam. Facilis eligendi a exercitationem nisi et placeat excepturi velit!</p>
+					<div class="col_one_third col_last">
+						<div class="team">
+							<div class="team-image">
+								<img src="images/doctors/3.jpg" alt="Dr. John Doe">
 							</div>
-
-							<div class="col-lg-6">
-
-								<h4><strong class="color">Q.</strong> What Images, Videos, Code or Music Can I Use in my Items?</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad odio ab quis architecto recusandae doloremque incidunt! Eius, quidem, pariatur necessitatibus commodi aliquid deleniti repudiandae accusantium nemo voluptate ullam natus illum magnam alias nobis doloremque delectus ipsa dicta repellat maxime dignissimos eveniet quae debitis ratione assumenda tempore officiis fugiat dolor. Saepe iusto praesentium ullam aliquam impedit.</p>
-
-								<div class="line line-sm"></div>
-
-								<h4><strong class="color">Q.</strong> Can I use trademarked names in my items?</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, nisi, laborum autem reprehenderit excepturi harum ipsum quod sit. Inventore et sunt nemo natus labore voluptate omnis reprehenderit culpa. Minus vitae molestiae totam ut a accusamus at fugiat nemo debitis delectus? Consectetur, deleniti, cupiditate ad doloribus numquam minus illum fugit laborum a voluptatum nulla at autem ab beatae odio dolorem assumenda magni laudantium saepe recusandae doloremque illo nesciunt aut quos debitis neque reiciendis veritatis iusto eos aliquid voluptatem pariatur eveniet velit?</p>
-
-								<div class="line line-sm"></div>
-
-								<h4><strong class="color">Q.</strong> How do I pay for items on the Marketplaces?</h4>
-								<p class="nobottommargin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo iusto aliquam voluptatem? Reiciendis, beatae, ipsam delectus voluptas ea error voluptates labore corporis ad tenetur sunt temporibus aperiam sit quis quasi tempora enim quo numquam provident ullam velit cumque similique veritatis quidem aliquam voluptatibus atque fugiat recusandae accusamus praesentium aut ipsa.</p>
-
+							<div class="team-desc">
+								<div class="team-title"><h4>Dr. Mary Jane</h4><span>Neurologist</span></div>
 							</div>
 						</div>
 					</div>
+
+					<div class="clear"></div>
+
+					<div class="col_one_third">
+						<div class="team">
+							<div class="team-image">
+								<img src="images/doctors/4.jpg" alt="Dr. John Doe">
+							</div>
+							<div class="team-desc">
+								<div class="team-title"><h4>Dr. Silvia Bush</h4><span>Dentist</span></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col_one_third">
+						<div class="team">
+							<div class="team-image">
+								<img src="images/doctors/6.jpg" alt="Dr. John Doe">
+							</div>
+							<div class="team-desc">
+								<div class="team-title"><h4>Dr. Hugh Baldwin</h4><span>Cardiologist</span></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col_one_third col_last">
+						<div class="team">
+							<div class="team-image">
+								<img src="images/doctors/7.jpg" alt="Dr. John Doe">
+							</div>
+							<div class="team-desc">
+								<div class="team-title"><h4>Dr. Erika Todd</h4><span>Neurologist</span></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="clear"></div>
+
+					<div class="col_one_third">
+						<div class="team">
+							<div class="team-image">
+								<img src="images/doctors/8.jpg" alt="Dr. John Doe">
+							</div>
+							<div class="team-desc">
+								<div class="team-title"><h4>Dr. Randy Adams</h4><span>Dentist</span></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col_one_third">
+						<div class="team">
+							<div class="team-image">
+								<img src="images/doctors/9.jpg" alt="Dr. John Doe">
+							</div>
+							<div class="team-desc">
+								<div class="team-title"><h4>Dr. Alan Freeman</h4><span>Eye Specialist</span></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col_one_third col_last">
+						<div class="team">
+							<div class="team-image">
+								<img src="images/doctors/2.jpg" alt="Dr. John Doe">
+							</div>
+							<div class="team-desc">
+								<div class="team-title"><h4>Dr. Phillip Anthropy</h4><span>Dentist</span></div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 
 				<div class="promo promo-flat promo-dark promo-full uppercase footer-stick">
@@ -445,28 +436,6 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="../../js/functions.js"></script>
-
-	<script>
-
-		$("#template-medical-form").validate({
-			submitHandler: function(form) {
-				var formButton = $(form).find('button'),
-					formButtonText = formButton.html();
-
-				formButton.prop('disabled', true).html('<i class="icon-line-loader icon-spin norightmargin"></i>');
-				$(form).ajaxSubmit({
-					target: '#medical-form-result',
-					success: function() {
-						formButton.prop('disabled', false).html(formButtonText);
-						$(form).find('.form-control').val('');
-						$('#medical-form-result').attr('data-notify-msg', $('#medical-form-result').html()).html('');
-						SEMICOLON.widget.notifications($('#medical-form-result'));
-					}
-				});
-			}
-		});
-
-	</script>
 
 </body>
 </html>

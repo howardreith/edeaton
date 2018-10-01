@@ -34,7 +34,22 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Doctors - Medical | Canvas</title>
+	<title>Edward Eaton - About Me</title>
+
+	<style>
+		.counters .overlay {
+			-webkit-transition: background-color .3s ease;
+			-o-transition: background-color .3s ease;
+			transition: background-color .3s ease;
+		}
+
+		.counters > div:nth-child(1) .overlay { background-color: rgba(229, 57, 53, 0.8); }
+		.counters > div:nth-child(2) .overlay { background-color: rgba(211, 47, 47, 0.8); }
+		.counters > div:nth-child(3) .overlay { background-color: rgba(198, 40, 40, 0.8); }
+		.counters > div:nth-child(4) .overlay { background-color: rgba(183, 28, 28, 0.8); }
+
+		.counters > div:hover .overlay { background-color: rgba(0, 0, 0, 0) }
+	</style>
 
 </head>
 
@@ -56,32 +71,14 @@
 					============================================= -->
 					<div class="top-links">
 						<ul>
-							<li><a href="#"><i class="icon-time"></i> Timings</a></li>
-							<li><a href="#"><i class="icon-phone3"></i> +91-800-9876-221</a></li>
-							<li><a href="#" class="nott"><i class="icon-envelope2"></i> medical@canvas.com</a></li>
+							<li><a href="#"><i class="icon-phone3"></i> PHONE NUMBER</a></li>
+							<li><a href="#" class="nott"><i class="icon-envelope2"></i> ed@edeaton.com</a></li>
 						</ul>
 					</div><!-- .top-links end -->
 
 				</div>
 
 				<div class="col_half col_last fright nobottommargin">
-
-					<!-- Top Links
-					============================================= -->
-					<div class="top-links">
-						<ul>
-							<li><a href="#">EN</a>
-								<ul>
-									<li><a href="#"><img src="../../images/icons/flags/french.png" alt="French"> FR</a></li>
-									<li><a href="#"><img src="../../images/icons/flags/italian.png" alt="Italian"> IT</a></li>
-									<li><a href="#"><img src="../../images/icons/flags/german.png" alt="German"> DE</a></li>
-								</ul>
-							</li>
-							<li><a href="../../demo-medical.html#booking-appointment-form" data-offset="100" data-easing="easeInOutExpo" data-speed="1200" class="bgcolor" style="color:#FFF;">Book an Appointment</a></li>
-						</ul>
-					</div><!-- .top-links end -->
-
-				</div>
 
 			</div>
 
@@ -100,8 +97,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="../../demo-medical.html" class="standard-logo"><img src="images/logo-medical.png" alt="Canvas Logo"></a>
-						<a href="../../demo-medical.html" class="retina-logo"><img src="images/logo-medical@2x.png" alt="Canvas Logo"></a>
+						<a href="../../index.html" class="standard-logo"><img src="images/logo-medical.png" alt="Canvas Logo"></a>
+						<a href="../../index.html" class="retina-logo"><img src="images/logo-medical@2x.png" alt="Canvas Logo"></a>
 					</div><!-- #logo end -->
 
 					<!-- Primary Navigation
@@ -109,19 +106,20 @@
 					<nav id="primary-menu" class="style-3 with-arrows">
 
 						<ul>
-							<li><a href="../../demo-medical.html"><div>Home</div></a></li>
-							<li><a href="about-us.html"><div>About Us</div></a></li>
-							<li><a href="departments.html"><div>Departments</div></a></li>
-							<li><a href="appointment.html"><div>Appointment</div></a></li>
-							<li class="current"><a href="doctors.html"><div>Doctors</div></a>
+							<li><a href="../../index.html"><div>Home</div></a></li>
+							<li class="current"><a href="pages/pages/about-me.html"><div>About Me</div></a></li>
+							<li><a href="pages/pages/doctors.html"><div>Services</div></a>
 								<ul>
-									<li><a href="doctors-lists.html"><div>2 columns - List style</div></a></li>
-									<li class="current"><a href="doctors-3.html"><div>3 columns</div></a></li>
-									<li><a href="doctors.html"><div>4 columns</div></a></li>
+									<li><a href="pages/pages/doctors-lists.html"><div>Fields of Expertise</div></a></li>
+									<li><a href="pages/pages/doctors-3.html"><div>Formulation Assistance</div></a></li>
+									<li><a href="pages/pages/doctors.html"><div>Problem Identification & Resolution</div></a></li>
+									<li><a href="pages/pages/doctors.html"><div>Program Assistance</div></a></li>
+									<li><a href="pages/pages/doctors.html"><div>Testing Programs</div></a></li>
+									<li><a href="pages/pages/doctors.html"><div>Training</div></a></li>
 								</ul>
 							</li>
-							<li><a href="blog.html"><div>Blog</div></a></li>
-							<li><a href="contact.html"><div>Contact</div></a></li>
+							<li><a href="pages/pages/blog.html"><div>Blog</div></a></li>
+							<li><a href="./contact.html"><div>Contact</div></a></li>
 						</ul>
 
 					</nav><!-- #primary-menu end -->
@@ -134,15 +132,14 @@
 
 		<!-- Page Title
 		============================================= -->
-		<section id="page-title" class="nobg">
+		<section id="page-title" class="page-title-dark page-title-center nopadding">
 
-			<div class="container clearfix">
-				<h1>Doctors</h1>
-				<span>A Short Page Title Tagline</span>
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="#">Home</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Doctors</li>
-				</ol>
+			<div class="fslider" data-arrows="false" data-pagi="false" data-animation="fade" data-hover="false">
+				<div class="flexslider">
+					<div class="slider-wrap">
+						<div class="slide"><img src="images/about-me/edward-eaton-about-me.jpg" alt="Edward Eaton at Deer Isle"></div>
+					</div>
+				</div>
 			</div>
 
 		</section><!-- #page-title end -->
@@ -152,123 +149,6 @@
 		<section id="content">
 
 			<div class="content-wrap">
-
-				<div class="container clearfix">
-
-					<div class="col_one_third">
-
-						<div class="team">
-							<div class="team-image">
-								<img src="images/doctors/1.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Dr. John Doe</h4><span>Cardiologist</span></div>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="col_one_third">
-						<div class="team">
-							<div class="team-image">
-								<img src="images/doctors/2.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Dr. Bryan Mcguire</h4><span>Orthopedist</span></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col_one_third col_last">
-						<div class="team">
-							<div class="team-image">
-								<img src="images/doctors/3.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Dr. Mary Jane</h4><span>Neurologist</span></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="clear"></div>
-
-					<div class="col_one_third">
-						<div class="team">
-							<div class="team-image">
-								<img src="images/doctors/4.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Dr. Silvia Bush</h4><span>Dentist</span></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col_one_third">
-						<div class="team">
-							<div class="team-image">
-								<img src="images/doctors/6.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Dr. Hugh Baldwin</h4><span>Cardiologist</span></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col_one_third col_last">
-						<div class="team">
-							<div class="team-image">
-								<img src="images/doctors/7.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Dr. Erika Todd</h4><span>Neurologist</span></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="clear"></div>
-
-					<div class="col_one_third">
-						<div class="team">
-							<div class="team-image">
-								<img src="images/doctors/8.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Dr. Randy Adams</h4><span>Dentist</span></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col_one_third">
-						<div class="team">
-							<div class="team-image">
-								<img src="images/doctors/9.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Dr. Alan Freeman</h4><span>Eye Specialist</span></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col_one_third col_last">
-						<div class="team">
-							<div class="team-image">
-								<img src="images/doctors/2.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Dr. Phillip Anthropy</h4><span>Dentist</span></div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="promo promo-flat promo-dark promo-full uppercase footer-stick">
-					<div class="container clearfix">
-						<h3 style="letter-spacing: 2px;">Start Planning your New Dream Home with us</h3>
-						<span class="nott">We strive to provide Our Customers with Top Notch Support to make their Theme</span>
-						<a href="#" class="button button-large button-border button-rounded button-light button-white">Contact Us</a>
-					</div>
-				</div>
 
 			</div>
 
@@ -357,14 +237,14 @@
 								<div class="col-lg-12 bottommargin-sm">
 									<div class="footer-big-contacts">
 										<span>Call Us:</span>
-										(91) 22 55412474
+										PHONE NUMBER
 									</div>
 								</div>
 
 								<div class="col-lg-12 bottommargin-sm">
 									<div class="footer-big-contacts">
 										<span>Send an Email:</span>
-										info@canvas.com
+										ed@edeaton.com
 									</div>
 								</div>
 
@@ -406,8 +286,7 @@
 				<div class="container clearfix">
 
 					<div class="col_half">
-						Copyrights &copy; 2016 All Rights Reserved by Canvas Inc.<br>
-						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+						Copyright &copy; 2018 Edward Eaton All Rights Reserved<br>
 					</div>
 
 					<div class="col_half col_last tright">
