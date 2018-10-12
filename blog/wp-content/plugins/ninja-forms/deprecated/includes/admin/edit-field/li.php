@@ -168,7 +168,7 @@ add_filter( 'quicktags_settings', 'NF_WP_Editor_Ajax::quicktags_settings', 10, 2
 class NF_WP_Editor_Ajax {
 
     /*
-    * AJAX Call Used to Generate the WP Editor
+    * AJAX Call Meed to Generate the WP Editor
     */
 
     public static function output_js( $field_id = '', $editors = array() ) {
