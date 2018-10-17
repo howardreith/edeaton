@@ -5,8 +5,8 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'Ed@ereaton.com', // Your Email Address
-				'name' => 'Edward R. Eaton' // Your Name
+				'email' => 'EdEatonContactForm@gmail.com', // Your Email Address
+				'name' => 'Edward Eaton Contact Form' // Your Name
 			);
 
 // Form Processing Messages
@@ -20,12 +20,13 @@ $mail = new PHPMailer();
 // If you intend you use SMTP, add your SMTP Code after this Line
 
 $mail->IsSMTP();
-$mail->Host = "mail.ereaton.com";
+$mail->Host = "smtp.gmail.com";
 $mail->SMTPDebug = 0;
 $mail->SMTPAuth = true;
 $mail->Port = 26;
-$mail->Username = "ed@ereaton.com";
+$mail->Username = "EdEatonContactForm@gmail.com";
 $mail->Password = "Redward!981";
+// $mail->Password = "!971Galaxie";
 
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
