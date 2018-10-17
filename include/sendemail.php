@@ -10,7 +10,7 @@ $toemails[] = array(
 			);
 
 // Form Processing Messages
-$message_success = 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
+$message_success = 'I have <strong>successfully</strong> received your message and will get back to you as soon as possible.';
 
 // Add this only if you use reCaptcha with your Contact Forms
 $recaptcha_secret = ''; // Your reCaptcha Secret
@@ -18,6 +18,14 @@ $recaptcha_secret = ''; // Your reCaptcha Secret
 $mail = new PHPMailer();
 
 // If you intend you use SMTP, add your SMTP Code after this Line
+
+$mail->IsSMTP();
+$mail->Host = "mail.ereaton.com";
+$mail->SMTPDebug = 0;
+$mail->SMTPAuth = true;
+$mail->Port = 26;
+$mail->Username = "ed@ereaton.com";
+$mail->Password = "Redward!981";
 
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
