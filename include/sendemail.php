@@ -8,8 +8,8 @@ require 'phpmailer/src/SMTP.php';
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'username@website.com', // Your Email Address
-				'name' => 'Your Name' // Your Name
+				'email' => 'ed_eaton@ereaton.com', // Your Email Address
+				'name' => 'Edward R. Eaton' // Your Name
 			);
 
 // Form Processing Messages
@@ -21,6 +21,14 @@ $recaptcha_secret = ''; // Your reCaptcha Secret
 $mail = new PHPMailer();
 
 // If you intend you use SMTP, add your SMTP Code after this Line
+
+$mail->IsSMTP();
+$mail->Host = “mail.ereaton.com”;
+$mail->SMTPDebug = 0;
+$mail->SMTPAuth = true;
+$mail->Port = 465;
+$mail->Username = “ed_eaton@ereaton.com”;
+$mail->Password = "!971Galaxie";
 
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
