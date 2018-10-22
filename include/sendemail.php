@@ -1,16 +1,19 @@
 <?php
 
-require_once('phpmailer/PHPMailerAutoload.php');
+use PHPMailer\PHPMailer\PHPMailer;
+
+require 'phpmailer/src/PHPMailer.php';
+require 'phpmailer/src/SMTP.php';
 
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'EdEatonContactForm@gmail.com', // Your Email Address
-				'name' => 'Edward Eaton Contact Form' // Your Name
+				'email' => 'username@website.com', // Your Email Address
+				'name' => 'Your Name' // Your Name
 			);
 
 // Form Processing Messages
-$message_success = 'I have <strong>successfully</strong> received your message and will get back to you as soon as possible.';
+$message_success = 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
 
 // Add this only if you use reCaptcha with your Contact Forms
 $recaptcha_secret = ''; // Your reCaptcha Secret
@@ -18,15 +21,6 @@ $recaptcha_secret = ''; // Your reCaptcha Secret
 $mail = new PHPMailer();
 
 // If you intend you use SMTP, add your SMTP Code after this Line
-
-$mail->IsSMTP();
-$mail->Host = "smtp.gmail.com";
-$mail->SMTPDebug = 0;
-$mail->SMTPAuth = true;
-$mail->Port = 26;
-$mail->Username = "EdEatonContactForm@gmail.com";
-$mail->Password = "Redward!981";
-// $mail->Password = "!971Galaxie";
 
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
