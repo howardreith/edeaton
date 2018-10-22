@@ -28,7 +28,7 @@ $mail = new PHPMailer();
 // $mail->SMTPAuth = true;
 // $mail->Port = 21;
 // $mail->Username = “ed_eaton@ereaton.com”;
-// $mail->Password = "!971Galaxie";
+// $mail->Password = "hide";
 
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
